@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spending Categories</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Spending Categories</h1>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('add_expense') }}">Add Expense</a></li>
+            <li><a href="{{ url_for('view_expenses') }}">View Expenses</a></li>
+        </ul>
+
+        <div class="chart-container">
+            <canvas id="spendingChart" width="400" height="400"></canvas>
+        </div>
+
+        <div class="spending-summary">
+            <h2>Summary of Spending</h2>
+            <ul>
+                <li>Groceries: $200</li>
+                <li>Entertainment: $100</li>
+                <li>Transportation: $150</li>
+                <li>Utilities: $80</li>
+            </ul>
+        </div>
+    </div>
+
+    
